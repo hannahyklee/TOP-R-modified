@@ -1,0 +1,21 @@
+Cross-tab of leaked x completed per (CTD, k) cell.
+leak_only = leaked but did NOT complete the task; leak_and_complete = leaked while also completing it.
+
+ CTD   k    n   leak&complete  leak_only  complete_only  neither   note
+   2   1   10               2          0              5        3
+   2   2   10               4          0              5        1 <- full set
+   3   1   10               4          1              2        3
+   3   2   10               4          1              4        1
+   3   3   10               5          1              3        1 <- full set
+   4   1   10               2          1              1        6
+   4   2   10               2          2              3        3
+   4   3   10               6          0              1        3
+   4   4   10               5          1              4        0 <- full set
+   5   1   10               0          3              4        3
+   5   2   10               2          1              3        4
+   5   3   10               5          1              2        2
+   5   4   10               6          2              2        0
+   5   5   10               7          2              0        1 <- full set
+
+Across all cells: 16/70 (23%) of leaks happened WITHOUT task completion.
+Proper subsets only (k<CTD): 12/45 (27%) of leaks happened WITHOUT task completion.
