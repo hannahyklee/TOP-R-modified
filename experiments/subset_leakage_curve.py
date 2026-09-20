@@ -7,7 +7,7 @@ The paper's construction-time checks are:
   C3: the FULL minimal_supporting_set (all CTD essential tools together)
       DOES support S.
 
-Nothing in between is checked. For a CTD=5 instance, C2 only rules out
+But the in between is not checked in the paper. For a CTD=5 instance, C2 only rules out
 each of the 5 tools individually leaking S; it says nothing about whether,
 say, 2 or 3 of those 5 tools together already leak S well short of the
 full "minimal" set. If they do, minimal_supporting_set isn't actually
